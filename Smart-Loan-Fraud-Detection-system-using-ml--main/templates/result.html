@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Loan Fraud Detection Result</h2>
+
+    <h3 class="{{ css_class }}">{{ result_text }}</h3>
+
+    <p><strong>Fraud Probability:</strong> {{ probability }}%</p>
+
+    <br>
+
+    <a href="/predict_page">
+        <button>Check Another Loan</button>
+    </a>
+
+    <a href="/">
+        <button>Go Home</button>
+    </a>
+
+</div>
+
+</body>
+</html>
